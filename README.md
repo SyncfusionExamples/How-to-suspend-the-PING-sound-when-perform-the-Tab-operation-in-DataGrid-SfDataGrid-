@@ -1,10 +1,10 @@
-# How to suspend the PING sound when perform the Tab operation in DataGrid(SfDataGrid)?
+# How to suspend the PING sound when perform the Tab operation in WinForms DataGrid?
 
 ## About the sample
 
-This example illustrates how to suspend the PING sound when perform the Tab operation in DataGrid(SfDataGrid)?
+This example illustrates how to suspend the PING sound when perform the Tab operation in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid).
 
-SfDataGrid doesn’t have direct support to disable this sound, which occurs when pressing Tab key on the TextBox. It is the behavior of the default TextBox. However, you can disable this by enabling the SuppressKeyPress property within the KeyDown event of the TextBox. In SfDataGrid cells this can be achieved by creating custom renderer. 
+**DataGrid** doesn't have direct support to disable this sound, which occurs when pressing Tab key on the TextBox. It is the behavior of the default TextBox. However, you can disable this by enabling the SuppressKeyPress property within the KeyDown event of the TextBox. In DataGrid cells this can be achieved by creating custom renderer. 
 
 ```C#
 this.sfDataGrid.CellRenderers["TextBox"] = new GridTextBoxCellRendererExt(); 
